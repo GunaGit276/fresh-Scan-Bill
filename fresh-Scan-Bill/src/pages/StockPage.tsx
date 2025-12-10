@@ -9,7 +9,7 @@ import { XOGame } from "@/components/dialogs/tic-tac-toe";
 
 
 export default function StockPage() {
-    const [addProductOpen, setAddProductOpen] = useState(false);
+    const [addStockOpen, setAddStockOpen] = useState(false);
     const [edit, setEdit] = useState(false);
     const [proCode, setProCode] = useState(0);
     const [product, setProduct] = useState("");
@@ -69,7 +69,7 @@ export default function StockPage() {
                     <div className="flex gap-2">
                         <Button
                             onClick={() => {
-                                setAddProductOpen(true);
+                                setAddStockOpen(true);
                                 setEdit(false);
                             }}
                         >
@@ -201,8 +201,8 @@ export default function StockPage() {
             </div>
 
             <AddStockDialog
-                open={addProductOpen}
-                onOpenChange={setAddProductOpen} />
+                open={addStockOpen}
+                onOpenChange={setAddStockOpen} />
         </Layout>
     );
 }
