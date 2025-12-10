@@ -21,7 +21,7 @@ public class CategoryService {
 
     public String postCategory(List<Category> categories) {
          categoryRepository.saveAll(categories);
-         return "Category saved Successfull..!!";
+         return "Category Saved Successfull..!!";
     }
 
     public Optional<Category> getCategoryById(int code) {
